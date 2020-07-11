@@ -51,6 +51,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:10;
   }
 
   .navbar a {
@@ -71,6 +72,89 @@
     margin-top: 70px;
   }
 
+
+  * {box-sizing: border-box;}
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .mySlides
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    vertical-align: middle;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    /* bottom: 8px; */
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #d3ffed;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
 </style>
 
 <div class = "navbar">
@@ -88,6 +172,201 @@
 <div class = "name">
   <p1>> Fun Pictures I've Collected In Different Places</p1>
 </div>
+
+<p>These are some pictures I've taken of various people, places and things 
+  since...well...since I've had enough space on my phone to keep them all. 
+  (I have a bunch of games that I've downloaded over time and have only played once *sigh*.)
+</p>
+
+<!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext" style="color: #000000;">1 / 19</div>
+      <img src="website-pictures/IMG_4371.jpeg" style="width:50%">
+      <div class="text">Senior year at Waltrip High School before I got to Carleton in Fall 2018</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 19</div>
+      <img src="website-pictures/257328BD-7855-449B-B998-0FE5D8537A40.jpeg" style="width:50%">
+      <div class="text">A cloudy day in Houston</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 19</div>
+      <img src="website-pictures/3B11457F-69FA-47B2-845F-4B51FC5CDB9C.jpeg" style="width:50%">
+      <div class="text">My tini golden-barrel cactus</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 19</div>
+      <img src="website-pictures/55DB59CB-54EB-4168-847A-8D2D4F7A6FD6.jpeg" style="width:50%">
+      <div class="text">A baby kalanchoe :)</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 19</div>
+      <img src="website-pictures/61233700865__43C2DBAC-D164-4241-BCF5-A181BC29C2F9.jpeg" style="width:50%">
+      <div class="text">A baby potato plant (it grew very tall very quickly)</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 19</div>
+      <img src="website-pictures/9AE7F334-60A1-45A9-B104-F3B328CF1E8B.jpeg" style="width:50%">
+      <div class="text">Cupcakes have feelings, too</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 19</div>
+      <img src="website-pictures/A757272C-B03A-4C27-8E11-54ABF6E89896.jpeg" style="width:50%">
+      <div class="text">A moment in time with a good pal</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 19</div>
+      <img src="website-pictures/ABA8A832-55E4-4EFF-A136-4ED8C198D4C5.jpeg" style="width:50%">
+      <div class="text">A mystery Friday Flower I found in my mailbox :)</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 19</div>
+      <img src="website-pictures/B0359565-81BA-46A4-AF2C-9262C5E6C70F.jpeg" style="width:50%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 19</div>
+      <img src="website-pictures/D1AB4E90-C6E3-410F-902C-4E270887DA7A.jpeg" style="width:50%">
+      <div class="text">Replanting some plant buddies</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">11 / 19</div>
+      <img src="website-pictures/IMG_0033.jpeg" style="width:100%">
+      <div class="text">A fun street sign in Houston</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">12 / 19</div>
+      <img src="website-pictures/IMG_1054.jpeg" style="width:50%">
+      <div class="text">I programmed a microchip!</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">13 / 19</div>
+      <img src="website-pictures/IMG_1262.jpeg" style="width:50%">
+      <div class="text">Without a doubt, these are the greatest fruit chews. They are powerful.</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">14 / 19</div>
+      <img src="website-pictures/IMG_1626.jpeg" style="width:50%">
+      <div class="text">My beloved a cappella group, Exit 69. </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">15 / 19</div>
+      <img src="website-pictures/IMG_1646.jpeg" style="width:50%">
+      <div class="text">My little garden :)</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">16 / 19</div>
+      <img src="website-pictures/IMG_1676.jpeg" style="width:50%">
+      <div class="text">The clouds are so amazing to me!</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">17 / 19</div>
+      <img src="website-pictures/IMG_2644.jpeg" style="width:50%">
+      <div class="text">A mystical photo of some structures in Houston</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">18 / 19</div>
+      <img src="website-pictures/IMG_4354.jpeg" style="width:50%">
+      <div class="text">Me!</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext" style="color: #000000;">19 / 19</div>
+      <img src="website-pictures/IMG_1528.jpeg" style="width:50%">
+      <div class="text">An Exit 69 concert poster from Winter 2020!</div>
+    </div>
+
+  </div>
+
+    <!-- <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div> -->
+
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
+      <span class="dot" onclick="currentSlide(14)"></span>
+      <span class="dot" onclick="currentSlide(15)"></span>
+      <span class="dot" onclick="currentSlide(16)"></span>
+      <span class="dot" onclick="currentSlide(17)"></span>
+      <span class="dot" onclick="currentSlide(18)"></span>
+      <span class="dot" onclick="currentSlide(19)"></span>
+    </div>
+
+<script>
+ var slideIndex = 0;
+showSlides();
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 
 
 </body>
